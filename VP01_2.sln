@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007_UniformGrid", "007_Unif
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008_MatchingGame", "008_MatchingGame\008_MatchingGame.csproj", "{E7280F93-71D7-49E0-A598-77A1062D0BF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "009_EIS", "009_EIS\009_EIS.csproj", "{A8FB5798-B9F9-436D-B098-23285CAE80BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{E7280F93-71D7-49E0-A598-77A1062D0BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7280F93-71D7-49E0-A598-77A1062D0BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7280F93-71D7-49E0-A598-77A1062D0BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FB5798-B9F9-436D-B098-23285CAE80BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FB5798-B9F9-436D-B098-23285CAE80BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FB5798-B9F9-436D-B098-23285CAE80BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FB5798-B9F9-436D-B098-23285CAE80BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
