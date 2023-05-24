@@ -109,5 +109,71 @@ namespace _009_EIS
 
       conn.Close();
     }
+
+    private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+      //DataGrid dg = (DataGrid)sender;
+      DataGrid dg = sender as DataGrid;  
+      DataRowView rowView = dg.SelectedItem as DataRowView;
+
+      if (rowView == null)
+        return;
+
+      txtEid.Text = rowView.Row[0].ToString();
+      txtName.Text = rowView.Row[1].ToString();
+      cbDept.Text = rowView.Row[2].ToString();
+      cbPos.Text = rowView.Row[3].ToString();
+
+      if(rowView.Row[4].ToString() == "남성")
+      {
+        rbMale.IsChecked = true;
+        rbFemale.IsChecked = false;
+      }
+      else
+      {
+        rbMale.IsChecked = false;
+        rbFemale.IsChecked = true;
+      }
+
+      dpEnter.Text = rowView.Row[5].ToString();
+      dpExit.Text = rowView.Row[6].ToString();
+      txtContact.Text = rowView.Row[7].ToString();
+      txtComment.Text = rowView.Row[8].ToString();
+    }
+
+    private void btnUpdate_Click(object sender, RoutedEventArgs e)
+    {
+      conn.Open();
+
+      dept = cbDept.Text;
+      pos = cbPos.Text;
+      if (rbMale.IsChecked == true)
+        gender = "남성";
+      else
+        gender = "여성";
+
+      try
+      {
+        string sql = string.Format(
+          "UPDATE eis_table SET name='{0}', department='{1}',"
+          + "position='{2}', gender='{3}', date_enter='{4}', "
+          + "date_exit='{5}', contact='{6}', comment='{7}'"
+          + "WHERE eid={8}",
+          txtName.Text, dept, pos, gender, dpEnter.Text, dpExit.Text,
+          txtContact.Text, txtComment.Text, txtEid.Text);
+
+        MySqlCommand cmd = new MySqlCommand(sql, conn);
+        if (cmd.ExecuteNonQuery() == 1)
+          MessageBox.Show("Updated Successfully!");
+      }
+      catch (Exception ex)
+      {
+        MessageBox.Show(ex.Message);
+      }
+
+      conn.Close();
+      InitControls();
+      DisplayDataGrid();
+    }
   }
 }

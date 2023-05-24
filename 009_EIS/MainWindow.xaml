@@ -72,7 +72,7 @@
             <Button x:Name="btnInsert" Content="Insert" Width="100" 
                     Margin="0 0 20 0" Click="btnInsert_Click"/>
             <Button x:Name="btnUpdate" Content="Update" Width="100" 
-                    Margin="0 0 20 0"/>
+                    Margin="0 0 20 0" Click="btnUpdate_Click"/>
           </StackPanel>
           <StackPanel Orientation="Horizontal" Margin="5" 
                       HorizontalAlignment="Center">
@@ -82,7 +82,7 @@
                     Margin="0 0 20 0" Click="btnLoadData_Click"/>
           </StackPanel>
         </StackPanel>
-        <DataGrid x:Name="dataGrid"  Width="540"/>
+        <DataGrid x:Name="dataGrid"  Width="540" SelectionChanged="dataGrid_SelectionChanged"/>
       </StackPanel>
     </StackPanel>
   </Grid>
