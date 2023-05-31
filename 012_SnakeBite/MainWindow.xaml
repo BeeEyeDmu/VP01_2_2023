@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_012_SnakeBite"
         mc:Ignorable="d"
-        Title="SnakeBite" Height="400" Width="525">
+        Title="SnakeBite" Height="400" Width="525"
+        Left="0" Top="0">
   <Grid>
     <Grid.Background>
       <ImageBrush ImageSource="Images/tulip.jpg" Stretch="Fill"/>

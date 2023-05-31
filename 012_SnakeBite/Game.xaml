@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_012_SnakeBite"
         mc:Ignorable="d"
-        Title="SnakeBite" Height="350" Width="420">
-  <Canvas x:Name="field" Width="420" Height="320" Background="LightSteelBlue">
+        Title="SnakeBite" Height="400" Width="525" 
+        KeyDown="Window_KeyDown"
+        WindowStartupLocation="CenterScreen">
+  <Canvas x:Name="field" Width="510" Height="370" Background="LightSteelBlue">
     <TextBlock x:Name="txtScore"  Margin="10" Canvas.Left="200"
                Text="Score = 0"/>
     <TextBlock x:Name="txtTimer"  Margin="10" Canvas.Left="280"

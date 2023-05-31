@@ -33,7 +33,7 @@ namespace _012_SnakeBite
 
     private void btnQuit_Click(object sender, RoutedEventArgs e)
     {
-
+      this.Close();
     }
   }
 }
