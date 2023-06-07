@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "013_Livechart", "013_Livech
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "014_Class", "014_Class\014_Class.csproj", "{E4B1F1B2-AF4B-44D1-BDF6-1FA20606EBA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "015_strudentScore", "015_strudentScore\015_strudentScore.csproj", "{1D89B600-2386-4E71-AEC2-E1FB83FCC628}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{E4B1F1B2-AF4B-44D1-BDF6-1FA20606EBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4B1F1B2-AF4B-44D1-BDF6-1FA20606EBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4B1F1B2-AF4B-44D1-BDF6-1FA20606EBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D89B600-2386-4E71-AEC2-E1FB83FCC628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D89B600-2386-4E71-AEC2-E1FB83FCC628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D89B600-2386-4E71-AEC2-E1FB83FCC628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D89B600-2386-4E71-AEC2-E1FB83FCC628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
