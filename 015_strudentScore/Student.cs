@@ -29,7 +29,7 @@ namespace _015_strudentScore
     public int Id
     {
       get { return id; }
-      set { if(id > 0) id = value; }
+      set { if(value > 0) id = value; }
     }
 
     // 생성자
